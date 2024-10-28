@@ -22,17 +22,19 @@ pipeline {
     stages {
         stage('compile') {
             steps {
-                echo 'compile'
+                echo 'This is compilation stage'
             }
-            
-            stage('test') {
+        }
+        
+        stage('test') {
             steps {
-                echo 'test'
+                echo 'This is testing stage'
             }
-            
-            stage('deploy') {
+        }
+        
+        stage('deploy') {
             steps {
-                echo 'deploy'
+                echo 'This is deployment stage'
             }
         }
     }
